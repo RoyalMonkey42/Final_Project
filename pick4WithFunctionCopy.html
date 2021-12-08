@@ -1,0 +1,44 @@
+<!Doctype html>
+<html>
+<head>
+	<title> Pick-4 Lottery </title>
+
+	<script type="text/javascript">
+	
+	function GenerateNumber()
+	//Assumes:
+	//Result:
+	{
+		numberInput=parseFloat(document.getElementById('userNumber').value);
+
+		one=Math.floor(numberInput*Math.random());
+		two=Math.floor(numberInput*Math.random());
+		three=Math.floor(numberInput*Math.random());
+		four=Math.floor(numberInput*Math.random());
+
+		document.getElementById('outputDiv').innerHTML='The Pick-4 Winners are ' + one + '-' + two + '-' + three + '-' + four + ' !';
+}
+	</script>
+
+</head>
+
+
+<body>
+<div style="text-align:center">
+	<h1> Pick-4 Lottery </h1>
+
+	<p> Enter a maximum ball number <input type="text" id="userNumber" value=""> </p>
+
+	<input type="button" value="Generate Pick-4 Winner" onclick="GenerateNumber();">
+
+<br>
+<hr>
+
+
+
+<div id="outputDiv"></div>
+</div>
+</body>
+
+
+</html>

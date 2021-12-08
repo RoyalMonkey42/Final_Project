@@ -1,0 +1,44 @@
+<!Doctype html>
+<head>
+	<title> JR Image Swapper on Click of a button </title>
+</head>
+<body>
+
+<div style="text-align:center">
+	<h1> Image Swapper </h1>
+
+
+	<img id="imgOne" src="../FinalProjectImages/die1.gif" width="200" height="200">
+	<img id="imgTwo" src="../FinalProjectImages/die2.gif" width="200" height="200">
+	<img id="imgThree" src="../FinalProjectImages/die3.gif" width="200" height="200">
+<br><br>
+		<input type="button" value="Swap Right" style="color:white"
+			onmouseover="this.style.backgroundColor='red';"
+			onmouseout="this.style.backgroundColor='green';"
+			onclick="
+				original=document.getElementById('imgOne').src;
+			document.getElementById('imgOne').src=document.getElementById('imgTwo').src;
+document.getElementById('imgTwo').src=document.getElementById('imgThree').src;
+document.getElementById('imgThree').src=original;">
+
+<!-- *********** -->
+<!-- Makes the images swap right -->
+<!-- *********** -->
+
+		<input type="button" value="Swap Left" style="color:white"
+			onmouseover="this.style.backgroundColor='pink';"
+			onmouseout="this.style.backgroundColor='purple';"
+			onclick="
+				original=document.getElementById('imgOne').src;
+			document.getElementById('imgOne').src=document.getElementById('imgThree').src;
+document.getElementById('imgThree').src=document.getElementById('imgTwo').src;
+document.getElementById('imgTwo').src=original;">
+
+<!-- *********** -->
+<!-- Makes the images swap left -->
+<!-- *********** -->
+
+</div>
+</body>
+
+</html>

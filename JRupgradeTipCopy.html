@@ -1,0 +1,28 @@
+<!Doctype html>
+<head>
+	<title> </title>
+</head>
+<body>
+<div style="text-align:center">
+	<h1> Tip Calculator </h1>
+<br>
+		<p> Enter the Check amount: $ 
+			<input type="text" id="amount" value=""> 
+		</p>
+<br>
+	<p> Tip percentage: <input type="text" id="percent" value="">% </p>
+<br>
+	<input type="button" value="Calculate Tip"
+		onclick="
+			amountNumber=parseFloat(document.getElementById('amount').value);
+			percentNumber=parseFloat(document.getElementById('percent').value);
+			total = amountNumber * (percentNumber/100);
+			document.getElementById('outputDiv').innerHTML='You should tip $' + total;">
+<hr>
+
+
+
+<div id="outputDiv"></div>
+</div>
+</body>
+</html>

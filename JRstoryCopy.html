@@ -1,0 +1,58 @@
+<!Doctype html>
+<head>
+	<title> Storytime </title>
+</head>
+
+<body style="background-color:orange">
+
+<div style="text-align:center">
+	<h1> Spooky Storytime with Joseph </h1>
+</div>
+	<p> Verb ending with '-ed':<input type="text" id="one" value=""> </p>
+	<p> Verb: <input type="text" id="two" value=""> </p>	
+	<p> Verb: <input type="text" id="three" value=""> </p>
+	<p> Noun (body part): <input type="text" id="four" value=""> </p>
+	<p> Noun (body part): <input type="text" id="five" value=""> </p>
+	<p> Noun (body part): <input type="text" id="six" value=""> </p>
+	<p> Noun: <input type="text" id="seven" value=""> </p>
+	<p> Adjective: <input type="text" id="eight" value=""> </p>	
+	<p> Noun (beverage): <input type="text" id="nine" value=""> </p>
+	<p> Noun (body part): <input type="text" id="ten" value=""> </p>
+	<p> Noun (something gross): <input type="text" id="eleven" value=""> </p>
+	<p> Verb: <input type="text" id="twelve" value=""> </p>
+	<p> Adjective: <input type="text" id="thirteen" value=""> </p>	
+	<p> Noun (body part): <input type="text" id="fourteen" value=""> </p>
+	<p> Noun (body part): <input type="text" id="fifteen" value=""> </p>
+
+	<input type="button" value="Click for a Short Story" 
+onclick="
+	one1 = document.getElementById('one').value;
+	two2 = document.getElementById('two').value;
+	three3 = document.getElementById('three').value;
+	four4 = document.getElementById('four').value;
+	five5 = document.getElementById('five').value;
+	six6 = document.getElementById('six').value;
+	seven7 = document.getElementById('seven').value;
+	eight8 = document.getElementById('eight').value;
+	nine9 = document.getElementById('nine').value;
+	ten10 = document.getElementById('ten').value;
+	eleven11 = document.getElementById('eleven').value;
+	twelve12 = document.getElementById('twelve').value;
+	thirteen13 = document.getElementById('thirteen').value;
+	fourteen14 = document.getElementById('fourteen').value;
+	fifteen15 = document.getElementById('fifteen').value;
+
+
+	document.getElementById('outputDiv').innerHTML='If zombies ' + one1 + ' a picnic, what would <br> they ' + two2 + ' to eat? Everybody knows <br> zombies love to ' + three3 + ' '+ four4 + ' , but <br> did you know they also enjoy ' + five5 + ' <br>and even ' + six6 + '? The best ' + seven7 + ' <br>for a zombie picnnic is when the moon is <br>' + eight8 + '. At least one zombie will bring <br>' + nine9 + ' to drink, and it\'s not a picnic <br>without ' + ten10 + ' with extra<br> ' + eleven11 + ' on top. After eating,<br> zombies will ' + twelve12 + ' ' + thirteen13 + ' games like<br> kick the ' + fourteen14 + ' and ' + fifteen15 + ' toss.'
+;">
+
+<!-- ********* -->
+<!-- I know the mad lib doesn't make that much sense but it works -->
+<!-- ********* -->
+
+<hr>
+<div id="outputDiv"></div>
+</body>
+
+
+</html>

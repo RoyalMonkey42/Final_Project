@@ -1,0 +1,43 @@
+<!doctype html>
+<head>
+	<title> form2.html </title>
+</head>
+<body>
+<div style="text-align:center">
+	<h1> Form Letter Generator </h1>
+</div>
+	<p>
+		Enter recipient's name:	<input type="text" id="nameInput" value="">
+	</p>
+
+	<p>
+		Enter activity: <input type="text" id="activityInput" value="">
+	</p>
+
+	<p>
+		Enter date: <input type="text" id="dateInput" value="">
+	</p>
+	<p>
+		Enter time: <input type="text" id="timeInput" value="">
+	</p>
+<br>
+
+<p>
+
+		<input type="button" value="Click to Generate Letter" 
+	onclick="
+name = document.getElementById('nameInput').value;
+activity = document.getElementById('activityInput').value;
+date = document.getElementById('dateInput').value;
+time = document.getElementById('timeInput').value;
+
+document.getElementById('outputDiv').innerHTML='Dear ' + name + ',<br><br> Have you heard about  ' + activity + ' which is coming up on ' + date + '?<br> Materials from Chapters 4, 5, 8, and 10 will be assessed in ' + activity + '.<br>' + 'Make sure to complete by ' + time + ' on ' + date + '.<br><br> Blessings,<br> Joseph Robinson';">
+</p>
+<hr>
+<br>
+
+<div id="outputDiv"></div>
+
+</body>
+
+<html>

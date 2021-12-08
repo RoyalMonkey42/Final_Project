@@ -1,0 +1,49 @@
+<!Doctype html>
+<html>
+<head>
+	<title> ESP 1 </title>
+
+	<script type="text/javascript">
+	
+	function esp(guess)
+//Generates a random between one and four
+	{ 
+		var number;
+
+		number=Math.floor(5*Math.random() + 1);
+		document.getElementById('outputDiv').innerHTML='You guessed ' + guess + ". My number was " + number + ". Were you right?";
+
+
+}
+
+	</script>
+</head>
+
+<body>
+<div style="text-align:center">
+
+	<h1> ESP Test </h1>
+
+	<p>Think of a number between 1 and 4, then click the button to see if you were right.</p>
+
+	<input type="button" id="one" value="Guess 1"
+		onclick="esp(1);">
+	<input type="button" id="two" value="Guess 2"
+		onclick="esp(2);">
+ 	<input type="button" id="three" value="Guess 3"
+		onclick="esp(3);">
+	<input type="button" id="four" value="Guess 4"
+		onclick="esp(4);">
+	<input type="button" id="five" value="Guess 5"
+		onclick="esp(5);">
+<br>
+<hr>
+
+
+<div id="outputDiv"> </div>
+</div>
+</body>
+
+
+
+</html>

@@ -1,0 +1,136 @@
+<!Doctype html>
+<html>
+<head>
+
+	<title>	Mega Metric </title>
+	<script type="text/javascript" src="convert1.js"></script>
+
+	<script type="text/javascript">
+	function inchesToCentimetersConverter()
+//Inches
+//To
+//Centimeters
+{
+
+inches = parseFloat(document.getElementById('inchesBox').value);
+
+centimeters = inchesToCentimeters(inches);
+
+document.getElementById('outputDiv').innerHTML= inches + ' inches is equal to ' + centimeters + ' centimeters.';
+
+
+}
+	</script>
+
+	<script type="text/javascript">
+	function centimetersToInchesConverter()
+//Centimeters
+//To
+//Inches
+{
+centimeters = parseFloat(document.getElementById('centimetersBox').value);
+
+inches = centimetersToInches(centimeters);
+
+document.getElementById('outputDiv').innerHTML= centimeters + ' centimeters is equal to ' + inches + ' inches.';
+
+}
+	</script>
+
+
+	<script type="text/javascript">
+	function kilosToPoundsConverter()
+
+{
+	kilos = parseFloat(document.getElementById('kiloBox').value);
+
+	pounds = kilosToPounds(kilos);
+	
+	document.getElementById('outputDiv').innerHTML= kilos + ' kilograms is equal to ' + pounds + ' pounds.';	
+
+}
+
+	</script>
+
+	<script type="text/javascript">
+	function smToSfConverter()
+{
+	squareMeters = parseFloat(document.getElementById('squareMetersBox').value); 
+
+	squareFeet = smToSf(squareMeters);
+
+	document.getElementById('outputDiv').innerHTML= squareMeters + ' square meters is equal to ' + squareFeet + ' square feet.';
+
+}
+	</script>
+
+	<script type="text/javascript">
+	function poundsToKilosConverter()
+{
+	pounds = parseFloat(document.getElementById('poundsToKilosBox').value);
+
+	kilograms = poundsToKilos(pounds);
+
+	document.getElementById('outputDiv').innerHTML= pounds + ' pounds is equal to ' + kilograms + ' kilograms.';
+
+}
+	</script>
+
+	<script type="text/javascript">
+	function squareFeetToSquareMeter()
+{
+	squareFeet = parseFloat(document.getElementById('squareFeetBox').value);
+
+	squareMeters = sfToSm(squareFeet);
+
+	document.getElementById('outputDiv').innerHTML= squareFeet + ' square feet is equal to ' + squareMeters + ' square meters.';
+
+} 
+	</script>
+	
+</head>
+
+<body>
+<div style="text-align:center">
+		<h1> Mega Metric </h1>
+		<p>
+			Inches To Centimeters: <input type="text" id="inchesBox" value="">
+<input type="button" value="Inches To Centimeters" 
+onclick="inchesToCentimetersConverter();">
+		</p>
+
+		<p>
+			Centimeters to Inches: <input type="text" id="centimetersBox" value="">
+<input type="button" value="Centimeters To Inches"
+onclick="centimetersToInchesConverter();">
+		</p>
+	
+		<p>
+			Kilograms To Pounds: <input type="text" id="kiloBox" value="">
+<input type="button" value="Kilograms To Pounds"
+onclick="kilosToPoundsConverter();">
+		</p>
+
+		<p>
+			Square Meters To Square Feet: <input type="text" id="squareMetersBox" value="">
+<input type="button" value="Square Meters To Square Feet"
+onclick="smToSfConverter();">
+		</p>
+
+		<p>
+			Pounds To Kilograms: <input type="text" id="poundsToKilosBox" value="">
+<input type="button" value="Pounds To Kilos"
+onclick="poundsToKilosConverter();">
+		</p>
+
+		<p>
+			Square Feet To Square Meters: <input type="text" id="squareFeetBox" value="">
+<input type="button" value="Square Feet To Square Meter"
+onclick="squareFeetToSquareMeter()";>
+		</p>
+		<hr><br>
+
+<div id="outputDiv"> Metric Converter </div>
+</div>
+</body>
+</html>
